@@ -4,26 +4,40 @@
 import React, { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
+import limeLogo from '/lime.svg';
 import './App.css';
 
 const HomePage: React.FC = () => {
-  const [count, setCount] = useState(0);
 
   return (
     <div>
+       <h1 style ={{color: '#84F289' }} >Welcome to Lime Connect</h1>
       <a href="https://www.li.me/" target="_blank">
-        <img src={viteLogo} className="logo" alt="Vite logo" />
+        <img src={limeLogo} className="logo" alt="Lime logo" />
       </a>
-      <h1>Lime Connect</h1>
-      <div className="card">
-        <button onClick={() => setCount(count + 1)}>
-          count is {count}
-        </button>
-        <p>Welcome to Lime Connect</p>
-      </div>
-      <p className="read-the-docs">
-        Where biking meets business
+      <p style={{ fontSize: "24px", color: '#F8FFF8' }}>See What's New</p>
+      
+
+      <div  className="desc-content">
+        <img src={limeLogo} className="logo" alt="Lime logo" />
+      <p className ="desc">
+        Lime is now available in all NYC Boroughs.
       </p>
+      </div>
+
+      <div  className="desc-content">
+      <img src={limeLogo} className="logo" alt="Lime logo" />
+      <p className ="desc">
+        Easily get to know any NYC neighborhood with Lime Routes.
+      </p>
+      </div>
+
+      <div  className="desc-content">
+      <img src={limeLogo} className="logo" alt="Lime logo" />
+      <p className ="desc">
+        Gain Community- New Group Rides, no destination needed. 
+      </p>
+      </div>
     </div>
   );
 };

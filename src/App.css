@@ -5,6 +5,14 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  background-color: #2A2A2A;  /* Color for the entire page background */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure the body takes the full height of the viewport */
+  display: flex; /* Allow flexbox layout for the body */
+  justify-content: center; /* Center content horizontally (optional) */
+  align-items: center; /* Center content vertically (optional) */
+}
 
 .logo {
   height: 6em;
@@ -17,6 +25,31 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.biking {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #F8FFF8;
+}
+.desc-content {
+  display: flex; /* This makes the children align horizontally */
+  align-items: center; /* Vertically align the items in the center */
+  margin-bottom: 1rem; /* Optional: space between items */
+}
+.desc-content img {
+  width: 25px; /* Adjust the logo size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and text */
+}
+.desc {
+  display: flex;
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  font-size: 15px;
+  color: #F8FFF8;
+  margin-bottom: 1rem;
+
 }
 
 @keyframes logo-spin {
